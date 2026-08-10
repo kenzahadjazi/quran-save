@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>المجموعة 384</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; background: #f4f6f9; padding: 20px; max-width: 800px; margin: auto; line-height: 2.5; }
+        .card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .quran-text { font-size: 20px; color: #2c3e50; text-align: justify; margin: 20px 0; }
+        .surah-title { display: block; background: #2e7d32; color: white; padding: 6px 15px; border-radius: 6px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 18px; text-align: center; }
+        .ayah-badge { color: #d32f2f; font-weight: bold; font-size: 16px; margin: 0 4px; }
+        .word { display: inline-block; margin-left: 4px; }
+        .completed { background-color: #fff9c4 !important; border: 2px solid #fbc02d; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .completed-btn { background: #fbc02d !important; color: #333 !important; }
+        .nav-links { margin-top: 20px; display: flex; justify-content: space-between; }
+        a { text-decoration: none; color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body id="body">
+    <div class="card" id="card">
+        <a href="index.html">🏠 العودة للفهرس الرئيسي</a>
+        <h2>المجموعة رقم 384 (من أواخر القرآن)</h2>
+        <p style="color: gray;">من سورة ص (آية 86) إلى سورة الصافات (آية 8)</p>
+        <hr>
+        <div class="quran-text"><div class="surah-title">📖 سورة ص</div><span class="ayah-badge">[86]</span> <span class="word">مَآ</span> <span class="word">أَسۡـَٔلُكُمۡ</span> <span class="word">عَلَيۡهِ</span> <span class="word">مِنۡ</span> <span class="word">أَجۡرٖ</span> <span class="word">وَمَآ</span> <span class="word">أَنَا۠</span> <span class="word">مِنَ</span> <span class="word">ٱلۡمُتَكَلِّفِينَ</span> <span class="ayah-badge">[87]</span> <span class="word">إِنۡ</span> <span class="word">هُوَ</span> <span class="word">إِلَّا</span> <span class="word">ذِكۡرٞ</span> <span class="word">لِّلۡعَٰلَمِينَ</span> <span class="ayah-badge">[88]</span> <span class="word">وَلَتَعۡلَمُنَّ</span> <span class="word">نَبَأَهُۥ</span> <span class="word">بَعۡدَ</span> <span class="word">حِينِۭ</span> <div class="surah-title">📖 سورة الصافات</div><span class="ayah-badge">[1]</span> <span class="word">وَٱلصَّـٰٓفَّـٰتِ</span> <span class="word">صَفّٗا</span> <span class="ayah-badge">[2]</span> <span class="word">فَٱلزَّـٰجِرَٰتِ</span> <span class="word">زَجۡرٗا</span> <span class="ayah-badge">[3]</span> <span class="word">فَٱلتَّـٰلِيَٰتِ</span> <span class="word">ذِكۡرًا</span> <span class="ayah-badge">[4]</span> <span class="word">إِنَّ</span> <span class="word">إِلَٰهَكُمۡ</span> <span class="word">لَوَٰحِدٞ</span> <span class="ayah-badge">[5]</span> <span class="word">رَّبُّ</span> <span class="word">ٱلسَّمَٰوَٰتِ</span> <span class="word">وَٱلۡأَرۡضِ</span> <span class="word">وَمَا</span> <span class="word">بَيۡنَهُمَا</span> <span class="word">وَرَبُّ</span> <span class="word">ٱلۡمَشَٰرِقِ</span> <span class="ayah-badge">[6]</span> <span class="word">إِنَّا</span> <span class="word">زَيَّنَّا</span> <span class="word">ٱلسَّمَآءَ</span> <span class="word">ٱلدُّنۡيَا</span> <span class="word">بِزِينَةٍ</span> <span class="word">ٱلۡكَوَاكِبِ</span> <span class="ayah-badge">[7]</span> <span class="word">وَحِفۡظٗا</span> <span class="word">مِّن</span> <span class="word">كُلِّ</span> <span class="word">شَيۡطَٰنٖ</span> <span class="word">مَّارِدٖ</span> <span class="ayah-badge">[8]</span> <span class="word">لَّا</span> <span class="word">يَسَّمَّعُونَ</span> <span class="word">إِلَى</span> <span class="word">ٱلۡمَلَإِ</span> <span class="word">ٱلۡأَعۡلَىٰ</span> </div>
+        <hr>
+        <button id="saveBtn" onclick="toggleSave()">حفظ هذه المجموعة (✓)</button>
+
+        <div class="nav-links">
+            <a href="group_383.html">⬅ المجموعة السابقة</a>
+            <a href="group_385.html">المجموعة التالية ➡</a>
+        </div>
+    </div>
+
+    <script>
+        const groupId = 384;
+        function updateUI() {
+            const state = localStorage.getItem('group_' + groupId) === 'true';
+            if(state) {
+                document.getElementById('card').classList.add('completed');
+                document.getElementById('saveBtn').innerText = 'تم الحفظ بنجاح (✓)';
+                document.getElementById('saveBtn').classList.add('completed-btn');
+            } else {
+                document.getElementById('card').classList.remove('completed');
+                document.getElementById('saveBtn').innerText = 'حفظ هذه المجموعة (✓)';
+                document.getElementById('saveBtn').classList.remove('completed-btn');
+            }
+        }
+        function toggleSave() {
+            const state = localStorage.getItem('group_' + groupId) === 'true';
+            localStorage.setItem('group_' + groupId, !state);
+            updateUI();
+        }
+        updateUI();
+    </script>
+</body>
+</html>

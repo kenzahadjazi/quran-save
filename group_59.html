@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>المجموعة 59</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; background: #f4f6f9; padding: 20px; max-width: 800px; margin: auto; line-height: 2.5; }
+        .card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .quran-text { font-size: 20px; color: #2c3e50; text-align: justify; margin: 20px 0; }
+        .surah-title { display: block; background: #2e7d32; color: white; padding: 6px 15px; border-radius: 6px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 18px; text-align: center; }
+        .ayah-badge { color: #d32f2f; font-weight: bold; font-size: 16px; margin: 0 4px; }
+        .word { display: inline-block; margin-left: 4px; }
+        .completed { background-color: #fff9c4 !important; border: 2px solid #fbc02d; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .completed-btn { background: #fbc02d !important; color: #333 !important; }
+        .nav-links { margin-top: 20px; display: flex; justify-content: space-between; }
+        a { text-decoration: none; color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body id="body">
+    <div class="card" id="card">
+        <a href="index.html">🏠 العودة للفهرس الرئيسي</a>
+        <h2>المجموعة رقم 59 (من أواخر القرآن)</h2>
+        <p style="color: gray;">من سورة المدثر (آية 3) إلى سورة المدثر (آية 18)</p>
+        <hr>
+        <div class="quran-text"><div class="surah-title">📖 سورة المدثر</div><span class="ayah-badge">[3]</span> <span class="word">وَرَبَّكَ</span> <span class="word">فَكَبِّرۡ</span> <span class="ayah-badge">[4]</span> <span class="word">وَثِيَابَكَ</span> <span class="word">فَطَهِّرۡ</span> <span class="ayah-badge">[5]</span> <span class="word">وَٱلرُّجۡزَ</span> <span class="word">فَٱهۡجُرۡ</span> <span class="ayah-badge">[6]</span> <span class="word">وَلَا</span> <span class="word">تَمۡنُن</span> <span class="word">تَسۡتَكۡثِرُ</span> <span class="ayah-badge">[7]</span> <span class="word">وَلِرَبِّكَ</span> <span class="word">فَٱصۡبِرۡ</span> <span class="ayah-badge">[8]</span> <span class="word">فَإِذَا</span> <span class="word">نُقِرَ</span> <span class="word">فِي</span> <span class="word">ٱلنَّاقُورِ</span> <span class="ayah-badge">[9]</span> <span class="word">فَذَٰلِكَ</span> <span class="word">يَوۡمَئِذٖ</span> <span class="word">يَوۡمٌ</span> <span class="word">عَسِيرٌ</span> <span class="ayah-badge">[10]</span> <span class="word">عَلَى</span> <span class="word">ٱلۡكَٰفِرِينَ</span> <span class="word">غَيۡرُ</span> <span class="word">يَسِيرٖ</span> <span class="ayah-badge">[11]</span> <span class="word">ذَرۡنِي</span> <span class="word">وَمَنۡ</span> <span class="word">خَلَقۡتُ</span> <span class="word">وَحِيدٗا</span> <span class="ayah-badge">[12]</span> <span class="word">وَجَعَلۡتُ</span> <span class="word">لَهُۥ</span> <span class="word">مَالٗا</span> <span class="word">مَّمۡدُودٗا</span> <span class="ayah-badge">[13]</span> <span class="word">وَبَنِينَ</span> <span class="word">شُهُودٗا</span> <span class="ayah-badge">[14]</span> <span class="word">وَمَهَّدتُّ</span> <span class="word">لَهُۥ</span> <span class="word">تَمۡهِيدٗا</span> <span class="ayah-badge">[15]</span> <span class="word">ثُمَّ</span> <span class="word">يَطۡمَعُ</span> <span class="word">أَنۡ</span> <span class="word">أَزِيدَ</span> <span class="ayah-badge">[16]</span> <span class="word">كَلَّآۖ</span> <span class="word">إِنَّهُۥ</span> <span class="word">كَانَ</span> <span class="word">لِأٓيَٰتِنَا</span> <span class="word">عَنِيدٗا</span> <span class="ayah-badge">[17]</span> <span class="word">سَأُرۡهِقُهُۥ</span> <span class="word">صَعُودًا</span> <span class="ayah-badge">[18]</span> <span class="word">إِنَّهُۥ</span> <span class="word">فَكَّرَ</span> <span class="word">وَقَدَّرَ</span> </div>
+        <hr>
+        <button id="saveBtn" onclick="toggleSave()">حفظ هذه المجموعة (✓)</button>
+
+        <div class="nav-links">
+            <a href="group_58.html">⬅ المجموعة السابقة</a>
+            <a href="group_60.html">المجموعة التالية ➡</a>
+        </div>
+    </div>
+
+    <script>
+        const groupId = 59;
+        function updateUI() {
+            const state = localStorage.getItem('group_' + groupId) === 'true';
+            if(state) {
+                document.getElementById('card').classList.add('completed');
+                document.getElementById('saveBtn').innerText = 'تم الحفظ بنجاح (✓)';
+                document.getElementById('saveBtn').classList.add('completed-btn');
+            } else {
+                document.getElementById('card').classList.remove('completed');
+                document.getElementById('saveBtn').innerText = 'حفظ هذه المجموعة (✓)';
+                document.getElementById('saveBtn').classList.remove('completed-btn');
+            }
+        }
+        function toggleSave() {
+            const state = localStorage.getItem('group_' + groupId) === 'true';
+            localStorage.setItem('group_' + groupId, !state);
+            updateUI();
+        }
+        updateUI();
+    </script>
+</body>
+</html>

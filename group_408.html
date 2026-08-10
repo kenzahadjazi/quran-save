@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>المجموعة 408</title>
+    <style>
+        body { font-family: Tahoma, sans-serif; background: #f4f6f9; padding: 20px; max-width: 800px; margin: auto; line-height: 2.5; }
+        .card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .quran-text { font-size: 20px; color: #2c3e50; text-align: justify; margin: 20px 0; }
+        .surah-title { display: block; background: #2e7d32; color: white; padding: 6px 15px; border-radius: 6px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 18px; text-align: center; }
+        .ayah-badge { color: #d32f2f; font-weight: bold; font-size: 16px; margin: 0 4px; }
+        .word { display: inline-block; margin-left: 4px; }
+        .completed { background-color: #fff9c4 !important; border: 2px solid #fbc02d; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        .completed-btn { background: #fbc02d !important; color: #333 !important; }
+        .nav-links { margin-top: 20px; display: flex; justify-content: space-between; }
+        a { text-decoration: none; color: #3498db; font-weight: bold; }
+    </style>
+</head>
+<body id="body">
+    <div class="card" id="card">
+        <a href="index.html">🏠 العودة للفهرس الرئيسي</a>
+        <h2>المجموعة رقم 408 (من أواخر القرآن)</h2>
+        <p style="color: gray;">من سورة يس (آية 39) إلى سورة يس (آية 45)</p>
+        <hr>
+        <div class="quran-text"><div class="surah-title">📖 سورة يس</div><span class="ayah-badge">[39]</span> <span class="word">عَادَ</span> <span class="word">كَٱلۡعُرۡجُونِ</span> <span class="word">ٱلۡقَدِيمِ</span> <span class="ayah-badge">[40]</span> <span class="word">لَا</span> <span class="word">ٱلشَّمۡسُ</span> <span class="word">يَنۢبَغِي</span> <span class="word">لَهَآ</span> <span class="word">أَن</span> <span class="word">تُدۡرِكَ</span> <span class="word">ٱلۡقَمَرَ</span> <span class="word">وَلَا</span> <span class="word">ٱلَّيۡلُ</span> <span class="word">سَابِقُ</span> <span class="word">ٱلنَّهَارِۚ</span> <span class="word">وَكُلّٞ</span> <span class="word">فِي</span> <span class="word">فَلَكٖ</span> <span class="word">يَسۡبَحُونَ</span> <span class="ayah-badge">[41]</span> <span class="word">وَءَايَةٞ</span> <span class="word">لَّهُمۡ</span> <span class="word">أَنَّا</span> <span class="word">حَمَلۡنَا</span> <span class="word">ذُرِّيَّتَهُمۡ</span> <span class="word">فِي</span> <span class="word">ٱلۡفُلۡكِ</span> <span class="word">ٱلۡمَشۡحُونِ</span> <span class="ayah-badge">[42]</span> <span class="word">وَخَلَقۡنَا</span> <span class="word">لَهُم</span> <span class="word">مِّن</span> <span class="word">مِّثۡلِهِۦ</span> <span class="word">مَا</span> <span class="word">يَرۡكَبُونَ</span> <span class="ayah-badge">[43]</span> <span class="word">وَإِن</span> <span class="word">نَّشَأۡ</span> <span class="word">نُغۡرِقۡهُمۡ</span> <span class="word">فَلَا</span> <span class="word">صَرِيخَ</span> <span class="word">لَهُمۡ</span> <span class="word">وَلَا</span> <span class="word">هُمۡ</span> <span class="word">يُنقَذُونَ</span> <span class="ayah-badge">[44]</span> <span class="word">إِلَّا</span> <span class="word">رَحۡمَةٗ</span> <span class="word">مِّنَّا</span> <span class="word">وَمَتَٰعًا</span> <span class="word">إِلَىٰ</span> <span class="word">حِينٖ</span> <span class="ayah-badge">[45]</span> <span class="word">وَإِذَا</span> <span class="word">قِيلَ</span> <span class="word">لَهُمُ</span> </div>
+        <hr>
+        <button id="saveBtn" onclick="toggleSave()">حفظ هذه المجموعة (✓)</button>
+
+        <div class="nav-links">
+            <a href="group_407.html">⬅ المجموعة السابقة</a>
+            <a href="group_409.html">المجموعة التالية ➡</a>
+        </div>
+    </div>
+
+    <script>
+        const groupId = 408;
+        function updateUI() {
+            const state = localStorage.getItem('group_' + groupId) === 'true';
+            if(state) {
+                document.getElementById('card').classList.add('completed');
+                document.getElementById('saveBtn').innerText = 'تم الحفظ بنجاح (✓)';
+                document.getElementById('saveBtn').classList.add('completed-btn');
+            } else {
+                document.getElementById('card').classList.remove('completed');
+                document.getElementById('saveBtn').innerText = 'حفظ هذه المجموعة (✓)';
+                document.getElementById('saveBtn').classList.remove('completed-btn');
+            }
+        }
+        function toggleSave() {
+            const state = localStorage.getItem('group_' + groupId) === 'true';
+            localStorage.setItem('group_' + groupId, !state);
+            updateUI();
+        }
+        updateUI();
+    </script>
+</body>
+</html>
